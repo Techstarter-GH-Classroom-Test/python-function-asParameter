@@ -1,24 +1,24 @@
 {
-    "tests": [
-      {
-        "name": "Test Übung 1",
-        "setup": "",
-        "run": "python -m unittest test_exercises.Test.test_exercise_1", 
-        "input": "",
-        "output": "",
-        "comparison": "included",
-        "timeout": 10,
-        "points": 10
-      },
-      {
-        "name": "Test Übung 2",
-        "setup": "",
-        "run": "python -m unittest test_exercises.Test.test_exercise_2",
-        "input": "",
-        "output": "",
-        "comparison": "included",
-        "timeout": 10,
-        "points": 10
-      }
-    ]
-  }
+  "tests": [
+    {
+      "name": "Test Multiplikation",
+      "setup": "",
+      "run": "python -m unittest test_exercises.Test.test_anwenden_multiplikation",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 10
+    },
+    {
+      "name": "Test Addition",
+      "setup": "",
+      "run": "python -m unittest test_exercises.Test.test_anwenden_addition",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 10
+    }
+  ]
+}
