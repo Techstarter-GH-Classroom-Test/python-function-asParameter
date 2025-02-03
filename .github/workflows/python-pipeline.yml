@@ -1,0 +1,23 @@
+name: GitHub Classroom Workflow
+
+on: [push]
+
+jobs:
+  build:
+    name: Autograding
+    runs-on: ubuntu-latest
+    container:
+      image: alpine/flake8  # Use a Python image with flake8 installed
+    steps:
+      - uses: actions/checkout@v4
+      - name: Checkout Unittests
+        uses: actions/checkout@v4
+        with:
+          repository: 'Techstarter-GH-Classroom-Test/_classroom_unit_tests'
+          path: unittests
+          ref: 'main'
+
+      - name: Copy Unittests
+        run: cp unittests/* .
+
+      - uses: education/autograding@v1
